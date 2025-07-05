@@ -44,7 +44,7 @@
         state: document.getElementById("state").value
       };
 
-      const response = await fetch("https://neet-predictor.onrender.com/predict", {
+      const response = await fetch("https://api-c607.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
