@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: neet-predictor
+    env: python
+    buildCommand: ""
+    startCommand: bash start.sh
+    plan: free
