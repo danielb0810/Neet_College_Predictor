@@ -2,10 +2,10 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import pandas as pd
 import numpy as np
-import pickle
+import joblib
 
 # Load model and dataset
-with open("neet_college_predictor.pkl", "rb") as f:
+with open("neet_college_predictor.joblib", "rb") as f:
     model = pickle.load(f)
 
 df = pd.read_excel("neet_cutoff.xlsx")
